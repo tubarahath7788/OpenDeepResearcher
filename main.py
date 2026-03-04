@@ -1,7 +1,7 @@
-from graph.workflow import run_research
+from agents.planner import planner_agent
 
 if __name__ == "__main__":
     query = input("Enter research topic: ")
-    result = run_research(query)
-    print("\nFinal Research Summary:\n")
+    result = planner_agent(query)
+    print("\nResearch Plan:\n")
     print(result)
